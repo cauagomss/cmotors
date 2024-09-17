@@ -1,14 +1,148 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    /* RESET */
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI';
+    /* BORDER BOX REMOVE DO PRÓPIO BLOCO PARA COLOCAR O PADDING */
 }
 
-.nav-inner  {
-    padding: 0 30px;
+
+body {
+    background: url(../assets/bodybg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */    
+.nav-inner  {   
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 15vh;
+    height: 12vh;
     background-color: #000;
+}
+
+.nav-inner a {
+    color: #9b9b9b;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-inner a:hover {
+    color: #fff;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+#nav-list {
+    list-style: none;
+}
+
+#nav-list li {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+#btn-login {
+    padding: 6px 15px;
+    border: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#btn-login:hover {
+    opacity: .7;
+    transition: .2s;
+}
+/* HEADER */
+
+#bg-main {
+    height: 70vh;
+    background: url(../assets/0bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+    border-bottom: 2px solid #ddd;
+}
+/* BG MAIN */
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+/* MAIN GLOBAL */
+
+.container  {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 25px;
+}
+
+main {
+    flex: 3 1 0;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+.post {
+    margin-bottom: 40px;
+}
+
+.post img {
+    width: 100%;
+    margin-bottom: 15px;
+    /* IMAGEM NÃO PASSARÁ DA LARGURA DO POST */
+}
+
+.title,
+.description {
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 34px;
+}
+
+.ancora{
+    color: #333;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.description {
+    text-align: justify;
+    line-height: 1.6em;
+}
+/* MAIN */
+
+#side-bar {
+    /* 25% DE TODO ELEMENTO */
+    flex: 1 1 0;
+    background-color: #fff;
+}
+
+#search,
+#marcas,
+#tags {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+
+#search h3,
+#marcas h3,
+#tags h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
 }

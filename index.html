@@ -10,38 +10,35 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-      <nav id="navbar">
-        <div id="nav-inner">
+      <!-- TRABALHANDO COM CLASSE PARA O ID NÃO SE SAIR SOBRE -->
+      <nav class="nav-inner">
           <a href="/" class="logo">
             <img src="/" alt="logo">
-          </a>
-
-          <div class="nav-menu"></div>
+          </a>            
           
           <ul id="nav-list">
-            <li>Home</li>
-            <li>Marcas</li>
-            <li>Eventos</li>
-            <li>Store</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Marcas</a></li>
+            <li><a href="/">Eventos</a></li>
+            <li><a href="/">Store</a></li>
           </ul>  
           
           <div class="user-login">
             <button id="btn-login">
-              Login
+              Entrar
             </button>
           </div>
-        </div>
       </nav>
     </header>
 
-    <div class="container">
-      <!-- Background -->
-      <div id="main-bg"></div>
+    <!-- Background -->
+    <div id="bg-main"></div>
 
-      <!-- Main Container -->
+    <!-- Main Container -->
+    <div class="container">
       <main id="post-container">
         <article class="post">
-          <h2>Toyota Supra MK4</h2>
+          <h2 class="title">Toyota Supra MK4</h2>
           <img src="assets/1supra.jpg" alt="Toyota Supra MK4">
           <p class="description">
             O Toyota Supra, um carro esportivo japonês que deixou uma marca indelével na história automotiva, continua a cativar os corações dos entusiastas até hoje. Originalmente introduzido como um mero nível de acabamento em 1978, passou por diversas transformações ao longo de quatro gerações antes de emergir como um modelo próprio e distinto. No entanto, foi de 1993 a 2002 que o Supra solidificou verdadeiramente o seu estatuto lendário, com a versão Supra Mk4 a destacar-se como uma verdadeira maravilha de proezas de engenharia. Oferecendo uma infinidade de opções personalizáveis, como motores turboalimentados, transmissões manuais ou automáticas e até uma variante de tejadilho desportivo, o Supra tornou-se sinónimo de experiências de condução personalizadas.
@@ -49,7 +46,7 @@
         </article>
 
         <article class="post">
-          <h2>Toyota Supra MK4 Especificações</h2>
+          <h2 class="title">Toyota Supra MK4 - Especificações</h2>
           <img src="assets/2supra.jpg" alt="Toyota Supra MK4 Especificações">
 
           <p class="description">
@@ -67,21 +64,23 @@
         </article>
 
         <article class="post">
-          <h2>Toyota Supra MK4 Preço</h2>
+          <h2 class="title">Toyota Supra MK4 - Preço</h2>
+          <img src="assets/3supra.jpg" alt="Toyota Supra MK4 Preços">
           <p class="description">
             Se um carro esportivo japonês pudesse definir uma década, teria que vir da Toyota. O carro-chefe da década de 1990 foi o Toyota Supra. O que começou como um nível de acabamento em 1978 evoluiu ao longo de 4 gerações para se tornar o seu próprio modelo. O preço do Toyota Supra dependia de três opções. A primeira foi a escolha entre turbo ou naturalmente aspirado. O número 2 é uma transmissão automática ou manual. O terceiro é a capota rígida ou esportiva. As especificações do Toyota Supra incluíam a opção de capota targa removível. Um preço Mark 4 Toyota Supra bem escolhido chegaria a US$ 40.000, uma fração do que eles vendem agora. Na verdade, o preço do Supra Mk4 disparou exponencialmente ao longo dos anos, chegando facilmente a mais de US$ 100.000 por um exemplar em ótimo estado, mas também há muitos exemplares usados ​​que podem chegar abaixo de US$ 100 mil dependendo da condição e das modificações. Além disso, não seria surpreendente encontrar Mk4 Supras que tiveram seus motores fortemente modificados, especialmente no departamento de turbocompressores.
           </p>
-          <img src="assets/3supra.jpg" alt="Toyota Supra MK4 Preços">
         </article>
 
         <article class="post">
-          <h2>Rei JDM</h2>
+          <h2 class="title">JDM King</h2>
           <img src="assets/4supra.png" alt="Toyota Supra MK4 Drift">
           <p class="description">
             O Supra é um ícone da cultura JDM devido à sua performance, design e modificações personalizadas. Sua presença imponente e a possibilidade de transformações mecânicas e estéticas fizeram dele um dos carros mais amados entre os entusiastas. Além disso, sua confiabilidade e capacidade de suportar grandes quantidades de potência adicional tornaram o Supra uma base perfeita para projetos de tuning extremos.
           </p>
 
-          <a href="/">Mais Sobre JDM</a>
+          <p class="ancora">
+            <a href="/">Mais Sobre JDM</a>
+          </p>
         </article>
       </main>
 
